@@ -1,0 +1,83 @@
+
+.sort-btn {
+  cursor: pointer;
+
+  &--active {
+    background-color:$green-med;
+  }
+}
+
+.leader-table {
+  width: 90vw;
+  max-width: 100rem;
+  border: 3px solid darken($green-med, 10%);
+  border-top: none;
+  border-collapse: collapse;
+  color: $grey;
+
+  &__header {
+    color: $white;
+    background: darken($green-med, 10%);
+    
+    & th {
+      width: 30%;
+      padding: 1rem;
+
+      &:first-child {
+        width: 40%;
+      }
+    }
+  }
+
+  td {
+    text-align: center;
+  }
+
+  &__row:nth-child(even) {
+    background: $green-light;
+  }
+
+  &__camper {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  // & > * {
+  //   position: absolute;
+  // }
+
+  &__rank {
+    color: $white;
+    font-size: 1.2rem;
+    background: $red;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -.25rem;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid $green;
+    border-radius: 50%;
+  }
+
+  &__username {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background: $green-med;
+    border-radius: 100px;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 0;
+    left: 4.8rem;
+  }
+}

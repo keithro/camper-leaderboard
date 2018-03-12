@@ -1,0 +1,16 @@
+.header {
+  color: $green;
+  text-align: center;
+  font-size: 2rem;
+  // position: relative;
+
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    padding-right: .5rem;;
+    fill: $green;
+    // position: absolute;
+    // top: .5rem;
+  }
+}

@@ -1,16 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
 	font-size: 62.5%;
 }
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: $m-size;
+	font-size: 1.6rem;
 }
 
-button {
-	cursor: pointer;
+#app {
+	// position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+
+	&::after {
+		background-color: $green;
+		background-image: url(/images/freecodecamp.svg);
+	}
 }
 
-button:disabled {
-	cursor: default;
+
+
+.container {
+
 }

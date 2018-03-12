@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Header from './Header';
+import LeaderList from './LeaderList';
+import SocialWidget from './SocialWidget';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="app">
-        <h1>Hello!</h1>
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div className="container">
+      <SocialWidget />
+      <Header />
+      <LeaderList />
+    </div>
+  );
 }
+
+export default App;
