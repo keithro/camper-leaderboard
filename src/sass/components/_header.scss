@@ -1,22 +1,26 @@
 .header {
-  // color: $green;
-  // background-color: $white;
   color: $white;
   background-color: $green;
   text-align: center;
   font-size: 2rem;
   padding: 2rem;
 
-  & h1 {
+  &__main {
     margin: 0;
   }
 
   &__icon {
     height: 5rem;
     width: 5rem;
-    padding-right: .5rem;;
-    // fill: $green;
+    padding-right: .5rem;
     fill: $white;
     margin-bottom: -1rem;
+  }
+
+  &__sub {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
   }
 }
