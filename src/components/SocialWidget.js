@@ -7,19 +7,19 @@ const SocialWidget = () => {
         <svg className="social-widget__icon">
           <use xlinkHref="images/sprite.svg#icon-laptop" />
         </svg>
-        my website
+        <span>my website</span>
       </a>
       <a href="https://github.com/keithro" className="social-widget__icon-box">
         <svg className="social-widget__icon">
           <use xlinkHref="images/sprite.svg#icon-github" />
         </svg>
-        github
+        <span>github</span>
       </a>
       <a href="https://www.linkedin.com/in/keithrodriguez/" className="social-widget__icon-box">
         <svg className="social-widget__icon">
           <use xlinkHref="images/sprite.svg#icon-linkedin" />
         </svg>
-        linkedIn
+        <span>linkedIn</span>
       </a>
     </div>
   );

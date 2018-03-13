@@ -38,19 +38,21 @@ export default class LeaderList extends Component {
 
   render() {
     return (
-      <table className="leader-table">
-        <thead className="leader-table__header">
+      <table className="table">
+        <thead className="table__header">
           <tr>
             <th>Camper Rank</th>
             <th
               className={this.state.selected === 'recent' ?
-                "sort-btn sort-btn--active" : "sort-btn"
+                "table__sort-btn table__sort-btn--active" :
+                "table__sort-btn"
               }
               onClick={() => this.handleClick('recent')}
             >Last 30 Days<span> &#8595;</span></th>
             <th
               className={ this.state.selected === 'alltime' ?
-                "sort-btn sort-btn--active" : "sort-btn"
+                "table__sort-btn table__sort-btn--active" :
+                "table__sort-btn"
               }
               onClick={() => this.handleClick('alltime')}
             >All Time<span> &#8595;</span></th>

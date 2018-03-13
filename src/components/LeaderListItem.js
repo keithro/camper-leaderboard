@@ -5,12 +5,12 @@ const LeaderListItem = ({camper, rank}) => {
   const linkAddress = `https://www.freecodecamp.org/${camper.username}`;
 
   return (
-    <tr className="leader-table__row">
+    <tr className="table__row">
       <td>
-        <div className="leader-table__camper">
-          <span className="leader-table__rank">{rank}</span>
-          <img className="leader-table__img" src={camper.img} alt={altText} />
-          <a className="leader-table__username" href={linkAddress}>{camper.username}</a>
+        <div className="table__camper">
+          <span className="table__rank">{rank}</span>
+          <img className="table__img" src={camper.img} alt={altText} />
+          <a className="table__username" href={linkAddress}>{camper.username}</a>
         </div>
       </td>
       <td>{camper.recent}</td>

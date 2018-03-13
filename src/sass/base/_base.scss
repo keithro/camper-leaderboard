@@ -12,15 +12,22 @@
 
 html {
   box-sizing: border-box;
-	font-size: 62.5%;
+  font-size: 50%; // 1rem = 9px
+  
+  @media only screen and (min-width: 25em) { // 400px
+    font-size: 56.255%; // 1rem = 10px
+  }
+  
+  @media only screen and (min-width: 37.5em) { // 600px
+    font-size: 62.5%; // 1rem = 10px
+  }
 }
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1.6rem;
   background-color: lighten($green-light, 1%);
-  background: url("/images/fcc-bg.jpeg") repeat fixed center;
-  // background-repeat: repeat;
+  background: url(http://www.keithrodriguez.me/camper-leaderboard/public/images/fcc-bg.jpeg) repeat fixed center;
 }
 
 #app {
@@ -29,6 +36,14 @@ body {
 }
 
 .container {
-  margin: 6rem 0;
+  margin: 2rem 0;
 	box-shadow: 0 1rem 4rem rgba(0,0,0,.2);
+  
+  @media only screen and (min-width: 37.5em) { // 600px
+    margin: 4rem 0;
+  }
+  
+  @media only screen and (min-width: 50em) { // 600px
+    margin: 6rem 0;
+  }
 }

@@ -1,26 +1,5 @@
 
-.sort-btn {
-  cursor: pointer;
-  transition: all .2s;
-
-  &:hover {
-    background-color:$green-med;
-  }
-
-  &--active {
-    background-color:$green-med;
-  }
-  
-  & > span {
-    display: none;
-  }
-
-  &--active > span {
-    display: inline;
-  }
-}
-
-.leader-table {
+.table {
   width: 90vw;
   max-width: 100rem;
   border: 3px solid darken($green-med, 10%);
@@ -41,6 +20,27 @@
       }
     }
   }
+
+  &__sort-btn {
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color:$green-med;
+  }
+
+  &--active {
+    background-color:$green-med;
+  }
+  
+  & > span {
+    display: none;
+  }
+
+  &--active > span {
+    display: inline;
+  }
+}
 
   td {
     text-align: center;
