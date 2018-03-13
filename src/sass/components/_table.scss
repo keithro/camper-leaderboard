@@ -1,9 +1,22 @@
 
 .sort-btn {
   cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color:$green-med;
+  }
 
   &--active {
     background-color:$green-med;
+  }
+  
+  & > span {
+    display: none;
+  }
+
+  &--active > span {
+    display: inline;
   }
 }
 
@@ -33,29 +46,36 @@
     text-align: center;
   }
 
+  &__row:nth-child(odd) {
+    background: $white;
+  }
+
   &__row:nth-child(even) {
     background: $green-light;
   }
 
   &__camper {
+    width: 20rem;
     position: relative;
-    padding-left: 1.5rem;
+    // padding-right: 6rem;
+    margin: 0.8rem auto .4rem auto;
   }
 
-  // & > * {
-  //   position: absolute;
-  // }
+  &__rank,
+  &__username {
+    color: $white;
+    position: absolute;
+    z-index: 2;
+  }
 
   &__rank {
-    color: $white;
     font-size: 1.2rem;
     background: $red;
     height: 2.25rem;
     width: 2.25rem;
     border-radius: 50%;
-    position: absolute;
     top: -.25rem;
-    left: 0;
+    left: 1.8rem;
 
     display: flex;
     justify-content: center;
@@ -65,19 +85,19 @@
   &__img {
     height: 4rem;
     width: 4rem;
-    border: 2px solid $green;
+    border: 3px solid $green;
     border-radius: 50%;
+    position: relative;
+    left: -4.5rem;
   }
 
   &__username {
-    color: white;
     font-size: 1.4rem;
     text-decoration: none;
     background: $green-med;
     border-radius: 100px;
     padding: 4px 8px;
-    position: absolute;
     bottom: 0;
-    left: 4.8rem;
+    left: 6.9rem;
   }
 }

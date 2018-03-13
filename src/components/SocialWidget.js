@@ -7,7 +7,7 @@ const SocialWidget = () => {
         <svg className="social-widget__icon">
           <use xlinkHref="images/sprite.svg#icon-laptop" />
         </svg>
-        website
+        my website
       </a>
       <a href="https://github.com/keithro" className="social-widget__icon-box">
         <svg className="social-widget__icon">

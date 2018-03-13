@@ -7,8 +7,9 @@ const Header = () => {
         <svg className="header__icon">
           <use xlinkHref="images/sprite.svg#icon-freecodecamp" />
         </svg>
-        FreeCodeCamp Leaderboard
+        FreeCodeCamp
       </h1>
+      <h2>Leaderboard</h2>
     </header>
   );
 };

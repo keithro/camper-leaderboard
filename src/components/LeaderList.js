@@ -32,9 +32,9 @@ export default class LeaderList extends Component {
     this.getUsers(range);
   }
 
-  // componentDidMount() {
-  //   this.getUsers('recent');
-  // }
+  componentDidMount() {
+    this.getUsers('recent');
+  }
 
   render() {
     return (
@@ -47,13 +47,13 @@ export default class LeaderList extends Component {
                 "sort-btn sort-btn--active" : "sort-btn"
               }
               onClick={() => this.handleClick('recent')}
-            >Last 30 Days</th>
+            >Last 30 Days<span> &#8595;</span></th>
             <th
               className={ this.state.selected === 'alltime' ?
                 "sort-btn sort-btn--active" : "sort-btn"
               }
               onClick={() => this.handleClick('alltime')}
-            >All Time</th>
+            >All Time<span> &#8595;</span></th>
           </tr>
         </thead>
         <tbody>

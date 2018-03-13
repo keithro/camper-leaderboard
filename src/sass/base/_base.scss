@@ -2,30 +2,33 @@
   margin: 0;
   padding: 0;
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
 html {
+  box-sizing: border-box;
 	font-size: 62.5%;
 }
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1.6rem;
+  background-color: lighten($green-light, 1%);
+  background: url("/images/fcc-bg.jpeg") repeat fixed center;
+  // background-repeat: repeat;
 }
 
 #app {
-	// position: relative;
-	overflow: hidden;
 	display: flex;
 	justify-content: center;
-
-	&::after {
-		background-color: $green;
-		background-image: url(/images/freecodecamp.svg);
-	}
 }
 
-
-
 .container {
-
+  margin: 6rem 0;
+	box-shadow: 0 1rem 4rem rgba(0,0,0,.2);
 }
